@@ -1,0 +1,8 @@
+# version 0003
+ENV{ID_VENDOR_ID}=="03fd", ENV{ID_MODEL_ID}=="0008", MODE="666"
+SUBSYSTEM=="usb", ACTION=="add", ENV{ID_VENDOR_ID}=="03fd", ENV{ID_MODEL_ID}=="0007", RUN+="/sbin/fxload -v -t fx2 -I /usr/share/xusbdfwu.hex -D %N"
+SUBSYSTEM=="usb", ACTION=="add", ENV{ID_VENDOR_ID}=="03fd", ENV{ID_MODEL_ID}=="0009", RUN+="/sbin/fxload -v -t fx2 -I /usr/share/xusb_xup.hex -D %N"
+SUBSYSTEM=="usb", ACTION=="add", ENV{ID_VENDOR_ID}=="03fd", ENV{ID_MODEL_ID}=="000d", RUN+="/sbin/fxload -v -t fx2 -I /usr/share/xusb_emb.hex -D %N"
+SUBSYSTEM=="usb", ACTION=="add", ENV{ID_VENDOR_ID}=="03fd", ENV{ID_MODEL_ID}=="000f", RUN+="/sbin/fxload -v -t fx2 -I /usr/share/xusb_xlp.hex -D %N"
+SUBSYSTEM=="usb", ACTION=="add", ENV{ID_VENDOR_ID}=="03fd", ENV{ID_MODEL_ID}=="0013", RUN+="/sbin/fxload -v -t fx2 -I /usr/share/xusb_xp2.hex -D %N"
+SUBSYSTEM=="usb", ACTION=="add", ENV{ID_VENDOR_ID}=="03fd", ENV{ID_MODEL_ID}=="0015", RUN+="/sbin/fxload -v -t fx2 -I /usr/share/xusb_xse.hex -D %N"

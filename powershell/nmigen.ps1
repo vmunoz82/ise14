@@ -1,0 +1,7 @@
+$env:ISE=("{0}\ise.ps1" -f $PSScriptRoot)
+$env:XST=("{0}\xst.ps1" -f $PSScriptRoot)
+$env:NGDBUILD=("{0}\ngdbuild.ps1" -f $PSScriptRoot)
+$env:MAP=("{0}\map.ps1" -f $PSScriptRoot)
+$env:PAR=("{0}\par.ps1" -f $PSScriptRoot)
+$env:BITGEN=("{0}\bitgen.ps1" -f $PSScriptRoot)
+$env:IMPACT=("{0}\impact.ps1" -f $PSScriptRoot)
