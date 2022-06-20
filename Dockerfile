@@ -20,7 +20,8 @@ COPY --from=builder /opt/Xilinx /opt/Xilinx
 
 RUN apt update && apt -y install \
     libusb-dev fxload \ 
-    libsm6 libglib2.0-0 libxi6 libxrender1 libxrandr2 \ 
+    libsm6 libglib2.0-0 libxi6 libxrender1 libxrandr2 \
+    libxtst6 \
     libfreetype6 libfontconfig1 gcc && \
     rm -rf /var/lib/apt/lists/* && \
     cp /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/xusbdfwu.hex /usr/share/ && \
